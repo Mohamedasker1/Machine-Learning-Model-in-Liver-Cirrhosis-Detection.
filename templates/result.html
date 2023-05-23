@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    <link rel="stylesheet " href="static/style.css">
+    <title>Cirrhosis Detection</title>
+</head>
+
+<style>
+.cards {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.upload {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #9e9e9e;
+}
+
+.icon {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.cards h3{
+
+    color: #000000;
+    text-align: center;
+    font-size: 1.9em;
+   font-weight: 700;
+
+}
+.cards-btn {
+    background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 9px;
+  display: block;
+  width: 180px;
+  height: 70px;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 50px;
+}
+</style>
+<body>
+
+    <header>
+
+        <a href="#" class="logo">Cirrhosis Detection </a>
+        <nav class="navi">
+            <a href="#Home" class="active"> Home </a>
+            <a href="#Check"> Check Cirrhosis </a>
+        </nav>
+
+    </header>
+
+
+    <section class="main" id="Home" >
+        <div>
+            <h2>Liver Cirrosis <br><span>Detection  </span></h2>
+            <h3>Using CT-scan</h3>
+
+        </div>
+    </section>                 
+
+
+    <section class="cards" id="Check">
+        <h2 class="title">Check cirrhotic</h2>
+        <div class="upload">
+        
+
+            
+        </div>
+        <h3>The Diagnosis: {{ prediction }}</h3>
+        <a href="/" class="cards-btn">Try Again</a>
+    </section>
+    
+
+    
+    
+
+    
+
+
+
+</body>
+</html>

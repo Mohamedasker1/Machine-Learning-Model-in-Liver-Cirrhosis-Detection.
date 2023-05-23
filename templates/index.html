@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    <link rel="stylesheet " href="static/style.css">
+    <title>Cirrhosis Detection</title>
+</head>
+<body>
+    
+    <header>
+
+        <a href="#" class="logo">Cirrhosis Detection </a>
+        <nav class="navi">
+            <a href="#Home" class="active"> Home </a>
+            <a href="#Check"> Check Cirrhosis </a>
+        </nav>
+
+    </header>
+
+
+    <section class="main" id="Home" >
+        <div>
+            <h2>Liver Cirrosis <br><span>Detection  </span></h2>
+            <h3>Using CT-scan</h3>
+            <a href="#Check" class="main-btn"> Check Cirrhosis</a>
+        </div>
+    </section>                 
+
+
+    <section class="cards" id="Check">
+        <h2 class="title">Check cirrhotic</h2>
+		<form action="/upload" method="POST" enctype="multipart/form-data">
+        <div class="upload">
+            <div class=" card">
+             
+				<div class="icon"><img src="{{ url_for('static', filename='images/gallery.png') }}" width="300"></div>
+                    <input type="file" name="file" accept=".jpg,.jpeg,.png,.tif,.tiff,.bmp" required>
+                 
+            </div>
+
+            
+        </div>
+        
+			<button type="submit" class="cards-btn">Detection</button>
+			</form>
+    </section>
+    
+
+    
+    
+
+    
+
+
+
+</body>
+</html>
